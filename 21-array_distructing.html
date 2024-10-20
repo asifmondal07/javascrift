@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                        // Array distructing
+
+        const myarray=["iteam1","iteam2","iteam3","iteam4"];
+        // let [array1]=myarray[1];
+        // let [array2]=myarray[2];
+
+        // let [array1,array2]=myarray;
+        // let [array1, ,array2]=myarray;
+
+            let [array1,array2, ...mynewarray]=myarray;   
+
+            console.log(array1);
+            console.log(array2);
+            console.log(mynewarray);
+
+    </script>
+</body>
+</html>

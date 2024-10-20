@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                        // For Loop In Array
+
+        let fruit=["Apple","Mango","Orange","Cevage","Banana"];
+        let total=fruit.length;
+        console.log(total);
+        for(let i=0; i<total; i++){
+            console.log(fruit[i]);
+        }
+
+                        //While Loop
+            let a=0;
+        while( a < fruit.length){
+            console.log(fruit[a]);
+            a++
+        }
+        
+
+                        //For Of Loop
+            let ff=[];
+        for(let fruits of fruit){
+            ff.push(fruits.toUpperCase());
+        }
+        console.log(ff);
+
+        for(let index in fruit){
+            console.log(fruit[index]);
+        }
+
+    </script>
+</body>
+</html>

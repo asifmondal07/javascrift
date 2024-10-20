@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                        //Nested If Else
+            let winningNum=20;
+            let custNum=+prompt("Guess A Number");  //using alert with input box and + icon using for string to number convention
+
+            if(winningNum === custNum){
+                document.write("You Win The Match");
+            }else{
+                if(custNum > winningNum){
+                    document.write("Your Guess The High Number "+ custNum);
+                }else{
+                    document.write("Your Guess The Low Number "+ custNum);
+                }
+            }
+
+    </script>
+</body>
+</html>

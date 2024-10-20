@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                        // ARRAY
+
+            let fruits=["appale","banaa","orange"];
+            console.log(fruits);
+            fruits[1]="mango";
+           console.log(fruits);
+
+           let abj={};
+
+           console.log(typeof fruits);
+           console.log(typeof abj);
+           console.log(Array.isArray(fruits)); //that method checking for array
+           console.log(Array.isArray(abj));
+
+                        //PUSH POP SHIFT UNSHIFT
+
+                                    //push and pop firster than compare unshift and shift
+                    //push
+            fruits.push("mango");               //that use for array add in last last number
+            fruits.push("greash");
+            console.log(fruits);
+
+                    //pop
+            fruits.pop();
+            console.log(fruits);                //that use for array remove on last number and store that value 
+            let popfruit=fruits.pop();
+            console.log(popfruit);
+
+                    //unshift
+            fruits.unshift("charry");           // that use for array add in first number
+            fruits.unshift("fanta");
+            console.log(fruits);
+
+                    //shift
+            let shiftfruit=fruits.shift();      // that use for array remove first number and store that value
+            console.log(shiftfruit);
+    </script>
+</body>
+</html>
