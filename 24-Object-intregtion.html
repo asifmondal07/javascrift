@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                        //How to intregation Object
+
+                const person={
+                    name:"Asif Ikbal Mondal",
+                    age:25,
+                    hobbies:["gameing","codeing","movvie Watching"]
+                }
+
+                            //for in loop
+                for(let key in person){
+                    console.log(person[key]);
+                }
+
+                            //Object.keys
+                for(let key of Object.keys(person)){
+                    console.log(person[key]);
+                }
+
+                const newob=Object.keys(person);
+                console.log(Array.isArray(newob));  //check that object is  array
+    </script>
+</body>
+</html>

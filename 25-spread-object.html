@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    //Spread Object 
+
+                const abc1={
+                    key1:"value1",
+                    key2:"value2"
+                };
+                const abc2={
+                    key3:"value3",
+                    key4:"value4"
+                };
+
+                const newObject={...abc1,...abc2,key5:"value5"};        // 2 object spread added new key and values
+
+                const aa={..."abcdefghijklmnopkrstwuvxyz"};             //after spread object key like index value 0
+
+                console.log(newObject);
+                console.log(aa);
+    </script>
+</body>
+</html>

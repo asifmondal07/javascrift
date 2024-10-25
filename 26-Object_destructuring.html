@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                        //Object destructuring
+
+            const band={
+                singer:"Atif Aslam",
+                song:"Lambah",
+                location:"Pakisthan",
+                gender:"Male"
+            }
+            // const bandsinger=band.singer;
+            // const bandsong=band.song;
+
+
+            // const {singer,song}=band ;          //second option just one line
+            const {singer,song,...props}=band;      // ... The remaining key values ​​are for declaration
+            // console.log(singer);
+            console.log(props);
+    </script>
+</body>
+</html>
