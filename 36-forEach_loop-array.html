@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    // forEach loop
+        
+        const array=[1,2,5,8,5,6,8,];
+
+        const myfunc=(number,index)=>{
+            console.log("index value is ",index);
+            console.log(`multiply ${number} * 2 =${number*2}`)
+        }
+        // myfunc(array[0],0); 
+
+        // for(let i=0;i<array.length;i++){
+        //     myfunc(array[i],i);
+        // }
+
+        // array.forEach((number,index)=>{
+        //     console.log("index value is ",index);
+        //     console.log(`multiply ${number} * 2 =${number*2}`);
+        // })
+        
+        // for(let arrays of array){
+        //     // console.log("index value is ",index);
+        //     console.log(`multiply ${arrays} * 2 =${arrays*2}`);
+        // }
+        
+        const object=[
+            {firstname:"Asif MOndal", gender:"male",},
+            {firstname:"Soaif MOndal", gender:"male",},
+            {firstname:"Sahil MOndal", gender:"male",}
+            
+        ]
+            object.forEach(({firstname})=>{             //foreach inside arrow function after array destructuring 
+                console.log(firstname);
+            })
+            for(let obj of object){
+                console.log(obj.firstname,obj.gender);
+            }
+    </script>
+
+</body>
+</html>
