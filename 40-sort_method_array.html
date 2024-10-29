@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    // short method
+
+        const number=[10,2,5,9,44,255,888];
+        number.sort((a,b)=>{return a-b});
+        console.log(number);
+
+        const product=[
+            {prductId:1, product:"p1", price:100},
+            {prductId:2, product:"p2", price:200},
+            {prductId:3, product:"p3", price:300},
+            {prductId:4, product:"p4", price:1100},
+            {prductId:5, product:"p5", price:10},
+        ]
+        
+        product.sort((a,b)=>{
+            return a.price-b.price;
+        })
+        console.log(product);
+    </script>
+
+</body>
+</html>
