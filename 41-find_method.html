@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    // Find method
+                                                                //this method will take call back function
+        const pet=["elepent","hourse","dog","cat"];
+
+        function isTrue(string){
+            return string.length === 3;
+        }
+        console.log(isTrue(pet[2]));                // that function return true / false
+
+        const newarray=pet.find(isTrue);            //that function retun first string the match with string on cudition
+        console.log(newarray); 
+        
+        const secondMethod=pet.find((string)=>string.length===3);     //  this oneline  arrow function
+            console.log(secondMethod);
+
+
+        const product=[
+            {prductId:1, product:"p1", price:100},
+            {prductId:2, product:"p2", price:200},
+            {prductId:3, product:"p3", price:300},
+            {prductId:4, product:"p4", price:1100},
+            {prductId:5, product:"p5", price:10},
+        ]   
+        ;
+        
+        const findperson=product.slice(0).find((product)=>product.prductId===3);
+        console.log(findperson);
+        
+    </script>
+
+</body>
+</html>

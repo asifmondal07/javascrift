@@ -9,22 +9,64 @@
     <script>
                                     // short method
 
-        const number=[10,2,5,9,44,255,888];
-        number.sort((a,b)=>{return a-b});    //sort method all time array converet to string after sorting this  array 
-        console.log(number);
+        // const number=[10,5,2,9,44,255,888];
 
-        const product=[
-            {prductId:1, product:"p1", price:100},
-            {prductId:2, product:"p2", price:200},
-            {prductId:3, product:"p3", price:300},
-            {prductId:4, product:"p4", price:1100},
-            {prductId:5, product:"p5", price:10},
-        ]
+    
+        // number.sort((a,b)=>{return a-b});    //sort method all time array converet to string after sorting this  array 
+        // console.log(number);
+
+        // const product=[
+        //     {prductId:1, product:"p1", price:100},
+        //     {prductId:2, product:"p2", price:200},
+        //     {prductId:3, product:"p3", price:300},
+        //     {prductId:4, product:"p4", price:1100},
+        //     {prductId:5, product:"p5", price:10},
+        // ]
         
-        product.sort((a,b)=>{
-            return a.price-b.price;
-        })
-        console.log(product);
+        // // product.sort((a,b)=>{                //this method change the main products array
+        // //     return a.price-b.price;
+        // // })
+        // // console.log(product);
+
+        // const lowToHigh=product.slice(0).sort((a,b)=>{      //this method can,t be change main array
+        //     return a.price - b.price;
+        // })
+        // console.log(lowToHigh);
+
+        // const highToLow=product.slice(0).sort((a,b)=>{
+        //     return  b.price - a.price ;
+        // })
+        // console.log(highToLow);
+        
+        // console.log(product);               //checked that main array 
+
+                                    //custom method 
+        
+
+        function customFind(arr){
+            if(arr.length <= 1) return arr;
+
+            let hold=arr[arr.length - 1];
+            let left=[];
+            let right=[];
+
+            for(let i = 0; i < arr.length-1; i++){
+                if(arr[i] < hold){
+                    left.push(arr[i]);
+                }else{
+                    right.push(arr[i]);
+                }
+
+            }
+
+            return[...customFind(left) , hold, ...customFind(right)];
+        
+        }
+
+        const array=[10,5,2,9,44,255,888];
+        const find=customFind(array);
+        console.log(find);
+
     </script>
 
 </body>

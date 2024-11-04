@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    // Some Method
+
+        const number=[2,4,3,5,8,9,10,3];
+        const sum=number.some((number)=>number % 2 ===0 );      //that function checked if one number is even retun true else all number is noteven retun false
+        console.log(sum);
+
+
+        const addCart=[
+            {productId:1, product:"mobile", Price:20000},
+            {productId:2, product:"laptop", Price:40000},
+            {productId:3, product:"tv",     Price:15000},
+            {productId:4, product:"table",  Price:10000},
+            {productId:5, product:"prinnter", Price:70000}
+        ]
+        
+        const ans=addCart.some((product)=>product.Price > 50000);
+        console.log(ans);
+    </script>
+
+</body>
+</html>

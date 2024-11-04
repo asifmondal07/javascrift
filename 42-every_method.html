@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    // Every Method
+
+                                    //every method all time return true and false
+
+        const number=[2,4,3,5,8,9,10,3];
+        const sum=number.every((number)=>number % 2 ===0);
+        console.log(sum);               // This method if one number exsits not even retun false otherwaise all even number exists retun true
+        
+        
+        const addCart=[
+            {productId:1, product:"mobile", Price:20000},
+            {productId:2, product:"laptop", Price:40000},
+            {productId:3, product:"tv",     Price:15000},
+            {productId:4, product:"table",  Price:10000},
+            {productId:5, product:"prinnter", Price:70000}
+        ]
+        
+        const ans=addCart.every((price)=>price.Price < 80000);    
+        
+        console.log(ans);
+    </script>
+
+</body>
+</html>
