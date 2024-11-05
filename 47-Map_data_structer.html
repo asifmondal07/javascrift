@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    // Map Data  Sturcter
+
+                                    //Map is an Iterable
+                                    //store data ordered function
+                                    //duplicate are not allow
+                                    //store key value par (like object)
+                                    
+                                    //differents between map and object
+
+                                //objects can only have string or symble as key
+                                //in Map you can use anything as key like array, number, string 
+
+                                
+            //object literal
+            //key => string
+            //key => symbol
+
+            // const person ={
+            //     firstName:"ASIF MONDAL",
+            //     age:25,
+            //     1:"one"
+            // }
+            // console.log(person.firstName);
+            // console.log(person["firstName"]);
+
+            // for(let key in person){
+            //     console.log(key,typeof(key));       
+            // }
+
+
+        //     const user=new Map();
+
+        // user.set('firstname','ASIF MONDA');
+        // user.set('age',22);
+        // user.set(1,'one')
+        // user.set({1:'one'},'Onefirst')
+        // user.set([1,2,3],'array');
+        // console.log(user);
+        // console.log(user.get(1));
+
+        // for(let key of user){
+        //     console.log(key,typeof key); //in Map you can use anything as key like array, number, string And typeof object
+        // }
+        // for(key of user){
+        //     console.log(Array.isArray(key));   //in Map store key value is array
+                
+        // }
+        // for([key ,value] of user){
+        //     console.log(value);     
+        // }
+
+        // const person1=new Map([['firstname',"ASIF MONDAL"],['age',25]]); //Map store array under array
+        // console.log(person1);
+
+        const personinfo={
+            userId:1,
+            firstname:"ASIF MONDAL",
+        }
+        const person2={
+            userId:2,
+            firstname:"moyna khatun",
+        }
+
+        const extraInfo=new Map();
+        extraInfo.set(personinfo,{age:25,gender:"male"});
+        extraInfo.set(person2,{age:25,gender:"female"});
+       
+        // console.log(personinfo.userId);
+        // console.log(personinfo.firstname);
+        // console.log(extraInfo.get(personinfo).age);
+        // console.log(extraInfo.get(personinfo).gender);
+
+        // console.log(person2.userId);
+        // console.log(person2.firstname);
+        // console.log(extraInfo.get(person2).age);
+        // console.log(extraInfo.get(person2).gender);
+
+        for([key,value] of extraInfo){
+            console.log("UserId =>" ,key.userId,", FirstName =>",key.firstname,", Gender =>",value.gender,", Age =>",value.age);
+            
+        }
+</script>
+
+</body>
+</html>

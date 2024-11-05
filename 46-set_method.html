@@ -20,10 +20,28 @@
         // const number =new Set([1,2,3,4]);
         // console.log(number);
 
+        const iteam=['iteam1','iteam2','iteam3']
+
         const number=new Set();
         number.add(1);
-
+        number.add(2);
+        number.add(2);      //can not add same number
+        number.add(iteam);      
+        number.add(['iteam4','iteam5']); 
+        number.add(['again iteam4','again iteam5']); 
         console.log(number);
+
+        const num=[1,2,4,6,7,8,9,6,5,4,7,8];
+        const newNum=new Set(num);
+        console.log(num);
+        console.log(newNum);
+        const value=new Set([1,2,4,6,7,8,9,6,5,4,7,8]);
+        let length=0;
+        for(let newvalue of value){
+            length++;
+            
+        }
+        console.log(length);
     </script>
 
 </body>
