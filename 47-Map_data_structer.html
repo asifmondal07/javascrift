@@ -71,7 +71,7 @@
         }
 
         const extraInfo=new Map();
-        extraInfo.set(personinfo,{age:25,gender:"male"});
+        extraInfo.set(personinfo,{age:25,gender:"male"});   //personInfo As key AND {age:25,gender:"male"} As value
         extraInfo.set(person2,{age:25,gender:"female"});
        
         // console.log(personinfo.userId);
@@ -85,9 +85,10 @@
         // console.log(extraInfo.get(person2).gender);
 
         for([key,value] of extraInfo){
-            console.log("UserId =>" ,key.userId,", FirstName =>",key.firstname,", Gender =>",value.gender,", Age =>",value.age);
+            console.log("UserId =>" ,key.userId,", FirstName =>",key.firstname,", Gender =>",value.gender,", Age =>",value.age);        
             
         }
+        console.log(extraInfo);
 </script>
 
 </body>
