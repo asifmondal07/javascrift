@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    // New Keyword
+
+            function usersCreate(firstName,lastName,email,age,addres){    
+                this.firstName=firstName;               //after use new keyword crate blank object <= this={ } =>
+                this.lastName=lastName;
+                this.email=email;
+                this.age=age;
+                this.addres=addres;
+            }
+
+            usersCreate.prototype.about=function(){
+                return  `${this.firstName} age is ${this.age}`;
+            }
+            usersCreate.prototype.is18=function(){
+                return this.age >= 18;
+            }
+            usersCreate.prototype.singer=function(){
+                return "fv singer is atif";
+            }
+
+            const person1=new usersCreate("ASIF","MONDAL","asikbal7ai@gmail.com",25,"dhapdhapi");
+            const person2=new usersCreate("soif","MONDAL","asikbal7ai@gmail.com",17,"dhapdhapi");
+            const person3=new usersCreate("sahil","MONDAL","asikbal7ai@gmail.com",20,"dhapdhapi");
+
+            console.log(person1.firstName);
+            console.log(person1.age);
+            console.log(person1.about());
+            console.log(person1.is18());
+            console.log(person1.singer());
+            console.log(person2.about());
+            console.log(person2.is18());
+            console.log(person3.about());
+            console.log(person3.is18());
+
+            
+
+    </script>
+
+</body>
+</html>

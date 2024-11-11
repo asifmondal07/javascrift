@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    // prototype define
+                                    //function === object
+        
+        function hello(){
+            return "hello";
+        }
+        console.log(hello.prototype);       //this function  is blank object
+
+
+        //how to added object in function using prototype
+
+        hello.prototype.key1="value1";          
+        hello.prototype.sing=function(){
+            return "lallalal ";
+        }
+        console.log(hello.prototype);       //access this protoype object
+        console.log(hello.prototype.sing());    //access this protoype object function
+
+        // const obj={key1:"value1"};  
+
+        // if(obj.prototype ){
+        //     console.log("Prototype is present");
+        // }else{
+        //     console.log("prototype is not present");
+        // }
+        // if(hello.prototype){
+        //     console.log("Prototype is present");
+        // }else{
+        //     console.log("prototype is not present");
+        // }
+        
+    </script>
+
+</body>
+</html>

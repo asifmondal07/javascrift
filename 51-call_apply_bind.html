@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    // Call / apply / bind
+
+            function info(hobby,fvsinger){
+            console.log(this.firstname,this.age,hobby,fvsinger);
+            }
+            const person1={
+                firstname:"ASIF MONDAL",
+                age:25,
+                about:info
+            }
+            
+            const person2={
+                firstname:"Soaif MONDAL",
+                age:24,
+            }
+
+            // person1.about.call(person1,"gaming","atif");    //after using call method define this value inside call()
+            // person1.about.call(person2,"playing","sonu");
+
+            // //apply
+
+            // person1.about.apply(person1,["gaming","atif"]);          //that method define function value in like array
+            // person1.about.apply(person2,["playing","sonu"]);
+
+            //bind
+
+            const myf=person1.about.bind(person1,"gaming","atif");      //that method all time retun new function
+            myf();
+    </script>
+
+</body>
+</html>

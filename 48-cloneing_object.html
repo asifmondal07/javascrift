@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    // clonening object
+
+        let obj={
+            key1:"value1",
+            key2:"value2"
+        }
+
+        // let obj1=obj;        
+
+        // let obj1={...obj};               
+        let obj1=Object.assign({},obj);         //new method for clonening 
+
+
+        obj.key3="value3";
+
+        console.log(obj);
+        console.log(obj1);
+    </script>
+
+</body>
+</html>

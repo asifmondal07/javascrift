@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    // prototype link __proto__
+
+            // const usermethod = {
+            //     about:function(){
+            //         return `${this.firstName} age is ${this.age}`;
+            //     },
+            //     is18:function(){
+            //         return this.age >= 18;
+            //     },
+            //     singer:function(){
+            //         return "fv song is kk"
+            //     }
+            // }
+
+            function usersCreate(firstName,lastName,email,age,addres){
+                const person=Object.create(usersCreate.prototype);      //create blank object and link with protype object
+                person.firstName=firstName;
+                person.lastName=lastName;
+                person.email=email;
+                person.age=age;
+                person.addres=addres;
+                return person;
+            }
+
+            usersCreate.prototype.about=function(){
+                return  `${this.firstName} age is ${this.age}`;
+            }
+            usersCreate.prototype.is18=function(){
+                return this.age >= 18;
+            }
+            usersCreate.prototype.singer=function(){
+                return "fv singer is atif";
+            }
+
+            const person1=usersCreate("ASIF","MONDAL","asikbal7ai@gmail.com",25,"dhapdhapi");
+            const person2=usersCreate("soif","MONDAL","asikbal7ai@gmail.com",17,"dhapdhapi");
+            const person3=usersCreate("sahil","MONDAL","asikbal7ai@gmail.com",20,"dhapdhapi");
+
+            console.log(person1.firstName);
+            console.log(person1.age);
+            console.log(person1.about());
+            console.log(person1.is18());
+            console.log(person1.singer());
+            console.log(person2.about());
+            console.log(person2.is18());
+            console.log(person3.about());
+            console.log(person3.is18());
+
+            
+
+    </script>
+
+</body>
+</html>

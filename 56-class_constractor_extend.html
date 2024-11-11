@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    // Class / Constractor / Extend
+
+            // class usersCreate{
+            //     constructor(firstName,lastName,email,age,addres){
+            //         this.firstName=firstName;               //after use new keyword crate blank object <= this={ } =>
+            //         this.lastName=lastName;
+            //         this.email=email;
+            //         this.age=age;
+            //         this.addres=addres;
+            //     }
+            //     about(){
+            //         return  `${this.firstName} age is ${this.age}`;
+            //     }
+            //     is18(){
+            //     return this.age >= 18;
+            //     }
+            //     singer(){
+            //         return "fv singer is atif";
+            //     }
+            // }
+
+            
+
+            // const person1=new usersCreate("ASIF","MONDAL","asikbal7ai@gmail.com",25,"dhapdhapi");//if using calss contractor use new 
+            // const person2=new usersCreate("soif","MONDAL","asikbal7ai@gmail.com",17,"dhapdhapi");
+            // const person3=new usersCreate("sahil","MONDAL","asikbal7ai@gmail.com",20,"dhapdhapi");
+
+            // console.log(person1.firstName);
+            // console.log(person1.age);
+            // console.log(person1.about());
+            // console.log(person1.is18());
+            // console.log(person1.singer());
+            // console.log(person2.about());
+            // console.log(person2.is18());
+            // console.log(person3.about());
+            // console.log(person3.is18());
+
+            
+
+
+            class animal{
+                constructor(name,age){
+                    this.name=name;
+                    this.age=age;
+                }
+                eat(){
+                    return `hi ${this.name} you eating meet`;
+                }
+            }
+            class  dog extends animal{
+                
+
+            }
+
+            // const dog1=new animal("Tomi",5);
+            // console.log(dog1.name);
+            // console.log(dog1.age);
+            // console.log(dog1.eat());
+
+
+            const dog2=new dog("lalu",4,45);
+            console.log(dog2.name);
+            console.log(dog2.age);
+            console.log(dog2.eat());
+            
+    </script>
+
+</body>
+</html>

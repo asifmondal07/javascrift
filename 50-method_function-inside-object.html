@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    // Method
+                                    //Function inside object
+
+            const person={
+                firstname:"ASIF MONDAL",
+                age:25,
+                about:function(){
+                    console.log(`First name is ${this.firstname} And Age is ${this.age} `)
+                }
+            }
+            const person1={
+                firstname:"Soaif MONDAL",
+                age:24,
+                about:function(){
+                    console.log(`First name is ${this.firstname} And Age is ${this.age} `)
+                }
+            }
+
+            person.about();
+            person1.about();
+
+                                    //function inside object
+
+                function info(){
+                    console.log(`First name is ${this.firstname} And Age is ${this.age} `);
+                }
+
+                const user1={
+                    firstname:"asif mondal",
+                    age:25,
+                    about:info
+                }
+                const user2={
+                    firstname:"Soaif mondal",
+                    age:24,
+                    about:info
+                }
+                const user3={
+                    firstname:"sahil mondal",
+                    age:23,
+                    about:info
+                }
+                
+                user1.about();
+                user2.about();
+                user3.about();
+    </script>
+
+</body>
+</html>

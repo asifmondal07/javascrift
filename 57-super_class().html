@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    //Super class()
+
+            
+
+
+            class animal{
+                constructor(name,age){
+                    this.name=name;
+                    this.age=age;
+                }
+                eat(){
+                    return `hi ${this.name} you eating meet`;
+                }
+            }
+            class  dog extends animal{
+                constructor(name,age,speed){
+                    super(name,age);        //this class use foe parent class call name and age method  (this.name=name)
+                    this.speed=speed;
+                }
+                run(){
+                    return ` ${this.name} is running at ${this.speed} kmph`;
+                }
+
+            }
+
+
+
+            const dog2=new dog("lalu",4,45);
+            console.log(dog2.name);
+            console.log(dog2.age);
+            console.log(dog2.eat());
+            console.log(dog2.run());
+    </script>
+
+</body>
+</html>

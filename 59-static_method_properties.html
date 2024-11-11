@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    // static method and properties
+
+        class animal{
+            constructor(name,age){
+                this.name=name;
+                this.age=age;
+            }
+            static get info(){      //static use animal class own method and get use for call time not using-()
+                return "This aanimal static method";
+            }
+            static about="animal properties";  //static use for animal class own properties
+
+            eat(){
+                return `${this.name} is eating`;
+            }
+        }
+
+        const dog1=new animal("tomi",2);
+        console.log(dog1.name);
+        console.log(animal.info);
+        console.log(animal.about);
+    </script>
+
+</body>
+</html>

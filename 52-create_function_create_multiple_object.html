@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                    // Create function for multiple object
+
+            const usermethod = {
+                about:function(){
+                    return `${this.firstName} age is ${this.age}`;
+                },
+                is18:function(){
+                    return this.age >= 18;
+                },
+                singer:function(){
+                    return "fv song is kk"
+                }
+            }
+
+            function usersCreate(firstName,lastName,email,age,addres){
+                const person=Object.create(usermethod);         //create blank object and call refferense method 
+                person.firstName=firstName;
+                person.lastName=lastName;
+                person.email=email;
+                person.age=age;
+                person.addres=addres;
+                return person;
+            }
+            const person1=usersCreate("ASIF","MONDAL","asikbal7ai@gmail.com",25,"dhapdhapi");
+
+            console.log(person1.firstName);
+            console.log(person1.age);
+            console.log(person1.about());
+            console.log(person1.is18());
+            console.log(person1.singer());
+
+            
+
+    </script>
+
+</body>
+</html>
