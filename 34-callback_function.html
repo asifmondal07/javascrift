@@ -4,22 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <button id="click">Clicked</button>
 </head>
 <body>
     <script>
+        
                                     //callBcak Function
 
-       const callback=(a)=>{
-        console.log("callBack function a value is ",a);
-       }
+    //    const callback=(a)=>{
+    //     console.log("callBack function a value is ",a);
+    //    }
 
-       const myfunc=(b)=>{
-        console.log("myfunc print first",b);
+    //    const myfunc=(b)=>{
+    //     console.log("myfunc print first",b);
         
-        b(25);
-       }
+    //     b(25);
+    //    }
 
-       myfunc(callback);
+    //    myfunc(callback);
+
+       function addattachment(){
+            let count=0;
+            document.getElementById("click").addEventListener("click",function(){
+                console.log("button clicked", ++count);
+            })
+        }
+        addattachment();
 
     </script>
 
