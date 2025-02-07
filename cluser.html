@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function x(c){
+            var a=7;
+            function z(){
+                let b=20
+                function y(){
+                    console.log(a,c,b)
+                }
+                return y;
+            }
+            return z;
+           
+        }
+       var close=x("Hello Asif")();
+       close();
+    </script>
+</body>
+</html>
