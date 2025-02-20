@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            padding: 8px;
+            font-size: 16px;
+        }
+        button {
+            padding: 8px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="string"><button onclick="checkDeome()">Check</button>
+    <p id="result"></p>
+    <script>
+        function checkDeome(){
+            let str=document.getElementById("string").value.toLowerCase().replace("/[^a-z0-9]/g","");
+            let reverseStr=str.split("").reverse().join("");
+
+            if(str===reverseStr && str!==''){
+                document.getElementById("result").innerHTML = `"${document.getElementById("string").value}" is a Palindrome ✅`;
+                document.getElementById("result").style.color = "green";
+            }else {
+                document.getElementById("result").innerHTML = `"${document.getElementById("string").value}" is NOT a Palindrome ❌`;
+                document.getElementById("result").style.color = "red";
+            }
+        }
+
+    </script>
+</body>
+</html>
