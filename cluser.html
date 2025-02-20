@@ -7,8 +7,21 @@
     <title>Document</title>
 </head>
 <body>
+    <button id="red">red</button>
+    <button id="green">green</button>
     <script>
-        
+                function myfunc(){
+                    const name="ASif Mondal";
+                    function innerfunc(){
+                        console.log(name);
+                    }
+                    return innerfunc;
+                }
+                // const closer=myfunc();
+                // closer();
+                myfunc()();
+
+            
         function x(c){
             var a=7;
             function z(){
@@ -23,6 +36,18 @@
         }
        var close=x("Hello Asif")();
        close();
+
+    </script>
+    <script>        //real time example
+
+            function clickhandeler(color){
+                return function(){
+                    document.body.style.backgroundColor=`${color}`;
+                }
+            }
+            document.getElementById("red").onclick=clickhandeler("red");
+            document.getElementById("green").onclick=clickhandeler("green");
+            
     </script>
 </body>
 </html>

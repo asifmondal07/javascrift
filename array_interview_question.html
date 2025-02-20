@@ -156,6 +156,18 @@ function deepEqual(obj1, obj2) {
 
 console.log(deepEqual({ a: 1, b: { c: 3 } }, { a: 1, b: { c: 3 } })); 
 
+// 11  find charector count  in string
+
+        const str="hi my nmae is asif mondal";
+        const count={};
+        for(let x of str){
+            if(count[x]){
+                count[x]+=1;
+            }else{
+                count[x]=1;
+            }
+        }
+        console.log(count);
 
 </script>
 </body>
