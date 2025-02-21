@@ -127,7 +127,7 @@
         }
         return clone;
     }
-    const obj={a:{b:{c:2}}};
+    const obj={a:1,b:{c:2,d:{e:3,f:{g:4}}}};
     const clone=deepClone(obj);
     console.log(clone);
     console.log(obj);
