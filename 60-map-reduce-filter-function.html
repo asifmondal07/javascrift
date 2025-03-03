@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map-filter-reduce--function</title>
+</head>
+<body>
+    <script>
+            arr=[5,2,3,4,6];
+
+
+                // function double(x){
+                //     return x*2
+                // }
+            let newArr=arr.map((double)=>double*3);
+            let binary=arr.map((binary)=>binary.toString((2)))
+
+            // console.log(newArr);
+            console.log(binary);
+
+            arr1=[1,23,,4,5,6,7,8,9,1,2,3,5,8,23,9]
+            
+            let sort=arr1.reduce((max,curr)=>{
+                if(curr>max){
+                    max=curr
+                }
+                return max
+            },0)
+           
+            console.log(sort);
+
+            arr3=[1,23,,4,5,6,7,8,9,1,2,3,5,8,23,9]
+
+            let output=arr3.filter((x)=>x>1 );
+            console.log(output);
+            
+    </script>
+</body>
+</html>
