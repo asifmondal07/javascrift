@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //global scope
+       var name="Asif Mondal";
+
+       function myfunc(){
+        console.log(name); //access global variable
+       }
+         myfunc(); //call function
+
+         // local scope
+         function myfunc2(){
+            var person="Soaif Mondal"; //local variable
+            console.log(person); //access local variable
+            function myfunc3(){
+                console.log("Hello World"); //local function
+            }
+         }
+        //  console.log(person); //canotaccess local variable
+         myfunc2(); //call function
+        //  myfunc3(); //canot call local function outside of its scope
+
+
+            //block scope
+            if(true){
+                let city="Kolkata"; //block scope variable
+                console.log(city); //access block scope variable
+            }
+            // console.log(city); //cannot access block scope variable outside of its block
+    </script>
+</body>
+</html>
