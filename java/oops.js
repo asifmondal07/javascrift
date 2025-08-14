@@ -158,7 +158,7 @@ class Sir extends Student {
 let p1=new Student("Asif" , 24);
 let s1= new Sir("alice",30,"Math",20000);
 
-
+    
 // p1.getPeople()
 s1.getTeacher()
 s1.getSalary()
